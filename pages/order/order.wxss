@@ -1,0 +1,20 @@
+.orderinfo_wrap .orderitem {
+  padding: 20rpx;
+  color: #666;
+  border-bottom: 1px solid #cccccc;
+}
+.orderinfo_wrap .orderitem .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+.orderinfo_wrap .orderitem .orderpriceitem .orderprice {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.orderinfo_wrap .orderitem .orderdateitem .orderdate {
+  color: #333;
+  font-weight: 600;
+}

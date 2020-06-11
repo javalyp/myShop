@@ -1,0 +1,3 @@
+<view class="auth">
+    <button class="btn_auth" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary" plain="{{true}}">微信授权</button>
+</view>

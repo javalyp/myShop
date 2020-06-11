@@ -1,0 +1,23 @@
+<view class="pyg_category">
+    <!-- 顶部搜索框 -->
+    <SearchInput></SearchInput>
+    <!-- 分类整体内容 -->
+    <view class="cate_main">
+        <!-- 左侧菜单 -->
+        <scroll-view scroll-y class="left_cate">
+            <view data-index="{{index}}" bindtap="handelCate" class="cate_item {{index===currentIndex?'active':''}}" wx:for="{{leftCates}}" wx:key="index">{{item}}</view>
+        </scroll-view>
+        <!-- 右侧商品内容 -->
+        <scroll-view scroll-top="{{scrollTop}}" scroll-y class="right_content">
+            <view class="group_goods" wx:for="{{rightContents}}" wx:key="index" wx:for-item="goodsitem" wx:for-index="goodsindex">
+                <view class="goods_title">{{goodsitem.cat_name}}</view>
+                <view class="goods_main">
+                    <navigator url="../../pages/goods_list/goods_list?cid={{gitem.cat_id}}" open-type="navigate" wx:for="{{goodsitem.children}}" wx:key="index" wx:for-index="gindex" wx:for-item="gitem">
+                        <image mode="widthFix" class="good_pic" src="{{gitem.cat_icon}}"></image>
+                        <view class="good_name">{{gitem.cat_name}}</view>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

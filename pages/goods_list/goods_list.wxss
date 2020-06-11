@@ -1,0 +1,30 @@
+.goods_list .zh_goods navigator {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx 0;
+}
+.goods_list .zh_goods navigator .good_left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_list .zh_goods navigator .good_left image {
+  width: 70%;
+}
+.goods_list .zh_goods navigator .good_right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goods_list .zh_goods navigator .good_right .good_desc {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_list .zh_goods navigator .good_right .good_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

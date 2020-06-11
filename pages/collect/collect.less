@@ -1,0 +1,52 @@
+.collect {
+    .collect_main {
+        .main_title {
+            padding: 20rpx 0;
+            background: #fff;
+            .txtlabel {
+                border: 1px solid #ccc;
+                padding: 10rpx 5rpx;
+                margin-left: 20rpx;
+            }
+            .active {
+                color: var(--themeColor);
+                border: 1px solid currentColor;
+            }
+        }
+        .main_content {
+            .zh_goods {
+                navigator {
+                    display: flex;
+                    border-bottom: 1px solid #ccc;
+                    padding: 10rpx;
+                    .good_left {
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // text-align: center;
+                        image {
+                            width: 70%;
+                        }
+                    }
+                    .good_right {
+                        flex: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        .good_desc {
+                            display: -webkit-box;
+                            overflow: hidden;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp:2;
+                        }
+                        .good_price{
+                            color: var(--themeColor);
+                            font-size: 32rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

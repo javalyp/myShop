@@ -1,0 +1,47 @@
+<view class="orderlist">
+    <Tabs tabs="{{tabs}}" bindhandleItemChange="handelItemChange"></Tabs>
+    <view class="orderinfo_wrap">
+        <view class="orderitem">
+            <view class="flex ordernoitem">
+                <view class="ordernotxt">订单编号</view>
+                <view class="orderno">QDK1889378293874833</view>
+            </view>
+            <view class="flex orderpriceitem">
+                <view class="orderpricetxt">订单价格</view>
+                <view class="orderprice">￥999.99</view>
+            </view>
+            <view class="flex orderdateitem">
+                <view class="orderdatetxt">订单日期</view>
+                <view class="orderdate">2020/06/10 下午19:00:00</view>
+            </view>
+        </view>
+        <view class="orderitem">
+            <view class="flex ordernoitem">
+                <view class="ordernotxt">订单编号</view>
+                <view class="orderno">QDK1889378293874833</view>
+            </view>
+            <view class="flex orderpriceitem">
+                <view class="orderpricetxt">订单价格</view>
+                <view class="orderprice">￥999.99</view>
+            </view>
+            <view class="flex orderdateitem">
+                <view class="orderdatetxt">订单日期</view>
+                <view class="orderdate">2020/06/10 下午19:00:00</view>
+            </view>
+        </view>
+        <view class="orderitem">
+            <view class="flex ordernoitem">
+                <view class="ordernotxt">订单编号</view>
+                <view class="orderno">QDK1889378293874833</view>
+            </view>
+            <view class="flex orderpriceitem">
+                <view class="orderpricetxt">订单价格</view>
+                <view class="orderprice">￥999.99</view>
+            </view>
+            <view class="flex orderdateitem">
+                <view class="orderdatetxt">订单日期</view>
+                <view class="orderdate">2020/06/10 下午19:00:00</view>
+            </view>
+        </view>
+    </view>
+</view>

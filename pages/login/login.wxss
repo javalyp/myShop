@@ -1,0 +1,4 @@
+.login .btn_login {
+  font-weight: 500;
+  margin-top: 20rpx;
+}

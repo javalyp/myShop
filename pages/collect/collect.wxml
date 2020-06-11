@@ -1,0 +1,23 @@
+<view class="collect">
+    <Tabs tabs="{{tabs}}"></Tabs>
+    <view class="collect_main">
+        <view class="main_title">
+            <text class="txtlabel active">全部</text>
+            <text class="txtlabel">正在热卖</text>
+            <text class="txtlabel">即将上线</text>
+        </view>
+        <view class="main_content">
+            <view class="zh_goods">
+                <navigator url="../../pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" open-type="navigate" wx:for="{{collect}}" wx:key="index">
+                    <view class="good_left">
+                        <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" />
+                    </view>
+                    <view class="good_right">
+                        <view class="good_desc">{{item.goods_name}}</view>
+                        <view class="good_price">￥{{item.goods_price}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

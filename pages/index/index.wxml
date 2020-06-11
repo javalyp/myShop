@@ -1,0 +1,33 @@
+<view class="pyg_index">
+    <!-- 顶部搜索栏开始 -->
+    <SearchInput></SearchInput>
+    <!-- banner位 -->
+    <view class="index_banner">
+        <swiper autoplay circular indicator-dots indicator-color="#fff" indicator-active-color="#666" interval="3000">
+            <swiper-item class="imgitem" wx:for="{{swiperItems}}" wx:key="index">
+                <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+                    <image mode="widthFix" class="pic" src="{{item.image_src}}" />
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 导航栏 -->
+    <view class="index_nav">
+        <navigator url="" open-type="" wx:for="{{categoryLists}}" wx:key="index">
+            <image src="{{item.image_src}}" mode="widthFix" />
+        </navigator>
+    </view>
+    <!-- 楼层 -->
+    <view class="index_floor">
+        <view class="floor_group" wx:for="{{floorLists}}" wx:for-item="titleItem" wx:for-index="titleIndex" wx:key="floor_title">
+            <view class="floor_title">
+                <image mode="widthFix" src="{{titleItem.floor_title.image_src}}" />
+            </view>
+            <view class="floor_main">
+                <navigator url="" open-type=""  wx:for="{{titleItem.product_list}}" wx:for-item="productItem" wx:for-index="productIndex" wx:key="name">
+                    <image mode="{{productIndex === 0 ? 'widthFix' : 'scaleToFill'}}" src="{{productItem.image_src}}" />
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

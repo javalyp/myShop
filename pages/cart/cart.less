@@ -1,0 +1,161 @@
+page {
+    padding-bottom: 90rpx;
+}
+.top_address {
+    padding: 15rpx 0;
+    .btn_getAddress {
+        font-weight: 500;
+    }
+    .receive_info {
+        padding: 20rpx;
+        .info_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.cartCon {
+    .carttxt {
+        font-size: 36rpx;
+        display: flex;
+        align-items: center;
+        color: var(--themeColor);
+        border-top: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        padding: 20rpx;
+    }
+    .goodinfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10rpx;
+        border-bottom: 1px solid #ccc;
+        .check_wrap {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img_wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 2;
+            image {
+                width: 80%;
+            }
+        }
+        .info_wrap {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .good_name_wrap {
+                .goodname {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp:2;
+                    color: #666;
+                }
+            }
+            .good_price_wrap {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 40rpx;
+                .goodprice {
+                    color: var(--themeColor);
+                    font-size: 34rpx;
+                }
+                .cart_num_tool {
+                    display: flex;
+                    .num_edit {
+                        border: 1px solid #ccc;
+                        width: 55rpx;
+                        height: 55rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .goodnum {
+                        width: 55rpx;
+                        height: 55rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .cart_none {
+        width: 100%;
+        padding: 355rpx 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .none_txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            margin-bottom: 20rpx;
+        }
+        .none_navigate {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20rpx;
+            border: 1px solid currentColor;
+            border-radius: 20rpx;
+            color:var(--themeColor);
+        }
+    }
+}
+.bottom_settlement {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    .allCheck_wrap {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .allchecktxt {
+            font-size: 28rpx;
+        }
+    }
+    .totalPrice_wrap {
+        flex: 3;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .pricetxt {
+            color: var(--themeColor);
+            font-size: 34rpx;
+            font-weight: 600;
+        }
+        .includeyf {
+            font-size: 28rpx;
+        }
+    }
+    .buy_wrap {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--themeColor);
+        color:#fff;
+        font-weight: 600;
+        font-size: 32rpx;
+    }
+}
