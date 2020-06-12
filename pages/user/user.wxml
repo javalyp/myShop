@@ -80,6 +80,7 @@
         <!-- 分享 -->
         <view class="share_wrap">
             <view class="sharetxt">把应用推荐给其他人</view>
+            <button open-type="share"></button>
             <view class="shareicon">></view>
         </view>
     </view>

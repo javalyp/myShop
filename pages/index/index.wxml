@@ -24,7 +24,7 @@
                 <image mode="widthFix" src="{{titleItem.floor_title.image_src}}" />
             </view>
             <view class="floor_main">
-                <navigator url="" open-type=""  wx:for="{{titleItem.product_list}}" wx:for-item="productItem" wx:for-index="productIndex" wx:key="name">
+                <navigator url="/pages/goods_list/goods_list?query={{productItem.name}}" open-type="navigate"  wx:for="{{titleItem.product_list}}" wx:for-item="productItem" wx:for-index="productIndex" wx:key="name">
                     <image mode="{{productIndex === 0 ? 'widthFix' : 'scaleToFill'}}" src="{{productItem.image_src}}" />
                 </navigator>
             </view>
