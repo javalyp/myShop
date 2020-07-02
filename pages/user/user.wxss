@@ -90,13 +90,13 @@ page {
   text-align: center;
   padding: 15rpx;
 }
-.user_content .user_main .myorder_wrap .order_bottom navigator {
+.user_content .user_main .myorder_wrap .order_bottom .oitem {
   flex: 1;
 }
-.user_content .user_main .myorder_wrap .order_bottom navigator .iconfont {
+.user_content .user_main .myorder_wrap .order_bottom .oitem .iconfont {
   color: var(--themeColor);
 }
-.user_content .user_main .myorder_wrap .order_bottom navigator .orderstatus {
+.user_content .user_main .myorder_wrap .order_bottom .oitem .orderstatus {
   margin-top: 10rpx;
   color: #666;
 }

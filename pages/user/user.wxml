@@ -39,22 +39,22 @@
                 <text class="ordertxt">我的订单</text>
             </view>
             <view class="order_bottom">
-                <navigator url="/pages/order/order?type=1">
+                <view class="oitem" data-type="1" bindtap="goorder">
                     <view class="iconfont icon-ding_dan"></view>
                     <view class="orderstatus">全部订单</view>
-                </navigator>
-                <navigator url="/pages/order/order?type=2">
+                </view>
+                <view class="oitem" data-type="2" bindtap="goorder">
                     <view class="iconfont icon-fukuantongzhi"></view>
                     <view class="orderstatus">待付款</view>
-                </navigator>
-                <navigator url="/pages/order/order?type=3">
+                </view>
+                <view class="oitem" data-type="3" bindtap="goorder">
                     <view class="iconfont icon-receipt-address"></view>
                     <view class="orderstatus">待收货</view>
-                </navigator>
-                <navigator url="/pages/order/order?type=4">
+                </view>
+                <view class="oitem" data-type="4" bindtap="goorder">
                     <view class="iconfont icon-tuihuotuikuan_dianpu"></view>
                     <view class="orderstatus">退货/退款</view>
-                </navigator>
+                </view>
             </view>
         </view>
         <!-- 收货地址 -->
