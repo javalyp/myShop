@@ -82,6 +82,13 @@ page {
 .good_detail .toolbar .tool_item .carttxt {
   font-size: 24rpx;
 }
+.good_detail .toolbar .tool_item .cartnums {
+  position: absolute;
+  left: 70rpx;
+  top: 0;
+  color: var(--themeColor);
+  font-weight: 600;
+}
 .good_detail .toolbar .addtocart {
   flex: 2;
   background: #FFA500;

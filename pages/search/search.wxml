@@ -1,2 +1,11 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="search">
+    <view class="searchtop">
+        <input class="ipt" value="{{inputValue}}" bindinput="handelSearchinput" confirm-type="search" placeholder="搜索"/>
+        <view hidden="{{!isFoucs}}" bindtap="handelCanel" class="btnsearch">取消</view>
+    </view>
+    <view class="searchmain">
+        <navigator url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" wx:for="{{goods}}" wx:key="{{item.goods_id}}">
+            {{item.goods_name}}
+        </navigator>
+    </view>
+</view>

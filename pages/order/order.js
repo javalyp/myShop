@@ -64,14 +64,8 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-        const token = wx.getStorageSync('token')
-        if (!token) {
-            wx.navigateTo({
-                url: '/pages/auth/auth'
-            })
-            return
-        }
         let pages = getCurrentPages()
+            // 取pages最后一项的options下的type值
         const { type } = pages[pages.length - 1].options
             // 索引index = type - 1
         this.changeTabs(type - 1)

@@ -57,7 +57,8 @@ Page({
      */
     onLoad: function(options) {
         // 获取传入的分类id，并赋值给查询条件数组的cid字段
-        this.queryParams.cid = options.cid
+        this.queryParams.cid = options.cid || ""
+        this.queryParams.query = options.query || ""
         this.getGoodLists()
     },
 
@@ -65,6 +66,7 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh: function() {
+        // 先将商品列表数组置为空
         this.setData({
             goodsList: []
         })
@@ -88,37 +90,9 @@ Page({
     },
 
     /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function() {
-
-    },
-
-    /**
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
 
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function() {
-
-    }
 })

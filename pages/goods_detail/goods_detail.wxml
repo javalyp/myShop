@@ -40,6 +40,7 @@
         <navigator url="../../pages/cart/cart" open-type="switchTab" class="tool_item cart">
             <view class="iconfont icon-gouwuche"></view>
             <view class="carttxt">购物车</view>
+            <!-- <view class="cartnums">99+</view> -->
         </navigator>
         <view class="tool_item addtocart" bindtap="handelCartAdd">加入购物车</view>
         <view class="tool_item gobuy">立即购买</view>

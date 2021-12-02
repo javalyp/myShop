@@ -1,4 +1,5 @@
 .tabs .tab_title {
+  background: #ffffff;
   display: flex;
 }
 .tabs .tab_title .title_item {
